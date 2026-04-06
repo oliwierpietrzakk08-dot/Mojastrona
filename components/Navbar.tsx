@@ -64,15 +64,15 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 font-sans ${
           isScrolled || pathname !== "/"
-            ? "bg-white/90 backdrop-blur-md shadow-sm py-2"
-            : "bg-white/10 backdrop-blur-md py-4"
+            ? "bg-white shadow-sm py-2"
+            : "bg-transparent py-4"
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
             className={`font-serif text-xl md:text-2xl tracking-tight transition-colors duration-300 ${
-              isScrolled || pathname !== "/" ? "text-[#1A2744]" : "text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"
+              isScrolled || pathname !== "/" ? "text-[#1A2744]" : "text-white"
             }`}
           >
             [NAZWA AGENCJI]
@@ -180,7 +180,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Toggle */}
           <button
-            className={`md:hidden p-2 transition-colors duration-300 ${isScrolled || pathname !== "/" ? "text-[#1A2744]" : "text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]"}`}
+            className={`md:hidden p-2 transition-colors duration-300 ${isScrolled || pathname !== "/" ? "text-[#1A2744]" : "text-white"}`}
             onClick={() => setIsOpen(true)}
             aria-label="Toggle menu"
           >

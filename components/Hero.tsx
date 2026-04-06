@@ -1,15 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image Placeholder with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/Background.jpg')" }}
-      />
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/Background.jpg"
+          alt="Hero Background"
+          fill={true}
+          style={{ objectFit: "cover" }}
+          priority={true}
+          quality={85}
+        />
+      </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col items-center text-center mt-16">
         <motion.h1
