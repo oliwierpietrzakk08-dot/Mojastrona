@@ -10,8 +10,8 @@ export default function Hero() {
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/background.png')" }}
       >
-        <div className="absolute inset-0 bg-[#1A2744]/60 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1A2744]/40 to-transparent" />
+        <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col items-center text-center mt-16">
