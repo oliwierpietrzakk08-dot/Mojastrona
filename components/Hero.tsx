@@ -7,14 +7,14 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image Placeholder with Overlay */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/images/Background.jpg"
           alt="Hero Background"
           fill={true}
           style={{ objectFit: "cover" }}
           priority={true}
-          quality={85}
+          quality={75}
         />
       </div>
 
