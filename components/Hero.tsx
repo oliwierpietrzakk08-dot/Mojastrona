@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image Placeholder with Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/background.png')" }}
+        style={{ backgroundImage: "url('/images/background.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent" />
