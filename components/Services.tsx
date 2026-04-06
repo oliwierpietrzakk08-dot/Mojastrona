@@ -65,13 +65,13 @@ export default function Services() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="mb-16 max-w-3xl"
         >
-          <div className="font-sans text-[13px] font-medium tracking-widest uppercase text-[#1A2744] mb-4">
+          <div className="font-sans text-sm md:text-[13px] font-medium tracking-widest uppercase text-[#1A2744] mb-4">
             Nasze usługi
           </div>
-          <h2 className="font-serif text-[48px] text-[#111111] mb-6 leading-tight">
+          <h2 className="font-serif text-xl md:text-[48px] text-[#111111] mb-6 leading-tight">
             Marketing, który pracuje<br className="hidden md:block"/> zamiast Ciebie
           </h2>
-          <p className="font-sans text-[18px] text-[#111111] font-light leading-relaxed">
+          <p className="font-sans text-sm md:text-[18px] text-[#111111] font-light leading-relaxed">
             Obsługujemy lokalne firmy kompleksowo — od social mediów po stronę www. Bez bullshitu, z mierzalnymi wynikami.
           </p>
         </motion.div>
@@ -102,17 +102,17 @@ export default function Services() {
                   <Icon className="w-6 h-6" />
                 </div>
                 
-                <h3 className="relative z-10 font-sans text-[22px] font-semibold text-[#111111] mb-4">
+                <h3 className="relative z-10 font-sans text-lg md:text-[22px] font-semibold text-[#111111] mb-4">
                   {service.title}
                 </h3>
                 
-                <p className="relative z-10 font-sans text-[18px] font-light text-[#111111] leading-relaxed flex-grow">
+                <p className="relative z-10 font-sans text-sm md:text-[18px] font-light text-[#111111] leading-relaxed flex-grow">
                   {service.description}
                 </p>
                 
                 <Link 
                   href={service.href} 
-                  className="relative z-10 mt-8 font-sans font-medium text-[#1A2744] flex items-center transition-all group-hover:gap-2 gap-1"
+                  className="relative z-10 mt-8 font-sans font-medium text-sm md:text-base text-[#1A2744] flex items-center transition-all group-hover:gap-2 gap-1"
                 >
                   Dowiedz się więcej <ArrowRight className="w-4 h-4 ml-1" />
                 </Link>
@@ -128,12 +128,12 @@ export default function Services() {
           transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
           className="mt-16 text-center"
         >
-          <div className="mb-6 font-sans text-[18px] text-[#111111] font-light">
+          <div className="mb-6 font-sans text-sm md:text-[18px] text-[#111111] font-light">
             Nie wiesz, od czego zacząć?
           </div>
           <Link
             href="/#kontakt"
-            className="inline-block border-2 border-[#1A2744] text-[#1A2744] rounded-full px-8 py-3 font-sans font-medium hover:bg-[#1A2744] hover:text-white transition-all duration-300"
+            className="inline-block border-2 border-[#1A2744] text-[#1A2744] rounded-full text-sm px-4 py-2 md:text-base md:px-8 md:py-3 font-sans font-medium hover:bg-[#1A2744] hover:text-white transition-all duration-300"
           >
             Porozmawiajmy — bezpłatna konsultacja
           </Link>

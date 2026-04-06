@@ -55,17 +55,17 @@ export default function Contact({ prefillMessage }: { prefillMessage?: string })
           
           {/* Left Column - Contact Details */}
           <div className="flex-1 lg:max-w-md w-full">
-            <h2 className="font-serif text-[32px] md:text-[48px] mb-6 leading-tight">
+            <h2 className="font-serif text-xl md:text-[48px] mb-6 leading-tight">
               Zacznijmy współpracę
             </h2>
-            <p className="font-sans text-white/80 font-light text-[18px] mb-10 leading-relaxed">
+            <p className="font-sans text-white/80 font-light text-sm md:text-[18px] mb-10 leading-relaxed">
               Zadzwoń, napisz lub wypełnij formularz — odpiszemy w ciągu 24 godzin i porozmawiamy o tym, jak możemy pomóc Twojej firmie.
             </p>
             
             <div className="space-y-6 mb-12">
               <a 
                 href="tel:123456789" 
-                className="inline-flex items-center gap-4 bg-white text-[var(--color-navy)] hover:bg-neutral-100 rounded-full px-8 py-3.5 text-[15px] font-medium tracking-[0.02em] transition-transform hover:scale-105 active:scale-95"
+                className="inline-flex items-center gap-4 bg-white text-[var(--color-navy)] hover:bg-neutral-100 rounded-full px-4 py-2 md:px-8 md:py-3.5 text-sm md:text-[15px] font-medium tracking-[0.02em] transition-transform hover:scale-105 active:scale-95"
               >
                 <Phone className="w-5 h-5" />
                 <span>Zadzwoń teraz</span>
@@ -74,7 +74,7 @@ export default function Contact({ prefillMessage }: { prefillMessage?: string })
               <div className="block">
                 <a href="mailto:kontakt@agencja.pl" className="inline-flex items-center gap-4 text-white/80 hover:text-white transition-colors py-2">
                   <Mail className="w-5 h-5 shrink-0" />
-                  <span className="font-sans text-lg font-light tracking-wide">kontakt@agencja.pl</span>
+                  <span className="font-sans text-sm md:text-lg font-light tracking-wide">kontakt@agencja.pl</span>
                 </a>
               </div>
             </div>
@@ -111,13 +111,13 @@ export default function Contact({ prefillMessage }: { prefillMessage?: string })
                     <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mb-6">
                       <CheckCircle className="w-10 h-10 text-green-500" />
                     </div>
-                    <h3 className="font-serif text-3xl text-[var(--color-navy)] mb-4">Wiadomość wysłana!</h3>
-                    <p className="text-[var(--color-text-muted)] font-sans">
+                    <h3 className="font-serif text-lg md:text-3xl text-[var(--color-navy)] mb-4">Wiadomość wysłana!</h3>
+                    <p className="text-[var(--color-text-muted)] font-sans text-sm md:text-base">
                       Dziękujemy za kontakt. Potwierdzenie zostało wysłane na Twój adres e-mail. Odpowiemy najszybciej jak to możliwe.
                     </p>
                     <button 
                       onClick={() => setSubmitStatus("idle")}
-                      className="mt-8 border-2 border-[var(--color-navy)] text-[var(--color-navy)] rounded-full px-8 py-2 font-medium"
+                      className="mt-8 border-2 border-[var(--color-navy)] text-[var(--color-navy)] rounded-full px-4 py-2 md:px-8 md:py-2 text-sm md:text-base font-medium"
                     >
                       Wyślij kolejną
                     </button>
@@ -196,7 +196,7 @@ export default function Contact({ prefillMessage }: { prefillMessage?: string })
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="mt-2 w-full bg-[var(--color-navy)] text-white hover:bg-[var(--color-navy-light)] rounded-full px-8 py-4 text-[15px] font-medium tracking-[0.02em] transition-all duration-300 flex items-center justify-center"
+                  className="mt-2 w-full bg-[var(--color-navy)] text-white hover:bg-[var(--color-navy-light)] rounded-full px-4 py-2 md:px-8 md:py-4 text-sm md:text-[15px] font-medium tracking-[0.02em] transition-all duration-300 flex items-center justify-center"
                 >
                   {isSubmitting ? (
                     <Loader2 className="w-5 h-5 animate-spin" />

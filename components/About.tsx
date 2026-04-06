@@ -45,14 +45,14 @@ export default function About() {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-serif text-[32px] md:text-[48px] text-[var(--color-navy)] mb-6 leading-tight"
+              className="font-serif text-xl md:text-[48px] text-[var(--color-navy)] mb-6 leading-tight"
             >
               Jesteśmy agencją, która rozumie lokalny biznes
             </motion.h2>
             
             <motion.p 
               variants={itemVariants}
-              className="font-sans text-[18px] text-[var(--color-text-muted)] font-light leading-relaxed mb-8"
+              className="font-sans text-sm md:text-[18px] text-[var(--color-text-muted)] font-light leading-relaxed mb-8"
             >
               <strong className="font-medium text-[var(--color-text)]">[NAZWA AGENCJI]</strong> — pomagamy małym i średnim firmom budować silną obecność w internecie. Bez bullshitu, bez przerostu formy nad treścią. Robimy to, co działa i przekłada się na konkretnych klientów dla Twojego biznesu.
             </motion.p>
@@ -70,7 +70,7 @@ export default function About() {
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[var(--color-navy)] flex items-center justify-center mt-1">
                     <Check className="w-3.5 h-3.5 text-white stroke-[3]" />
                   </div>
-                  <span className="font-sans text-[18px] text-[var(--color-text)] font-light">
+                  <span className="font-sans text-sm md:text-[18px] text-[var(--color-text)] font-light">
                     {point}
                   </span>
                 </motion.li>

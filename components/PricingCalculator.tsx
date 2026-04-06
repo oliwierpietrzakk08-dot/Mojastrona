@@ -125,13 +125,13 @@ export default function PricingCalculator({ onInquiry }: { onInquiry: (msg: stri
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="font-serif text-[32px] md:text-[48px] text-[#111111] mb-4">
+          <h2 className="font-serif text-xl md:text-[48px] text-[#111111] mb-4">
             Ile kosztuje Twój marketing?
           </h2>
-          <p className="font-sans text-[18px] text-[#6B7280]">
+          <p className="font-sans text-sm md:text-[18px] text-[#6B7280]">
             Zaznacz usługi, które Cię interesują — zobaczysz cenę całego pakietu.
           </p>
-          <p className="font-sans text-[14px] text-[#9CA3AF] mt-2">
+          <p className="font-sans text-sm md:text-[14px] text-[#9CA3AF] mt-2">
             Ceny są orientacyjne i mogą się różnić w zależności od zakresu projektu.
           </p>
         </motion.div>
@@ -211,10 +211,10 @@ export default function PricingCalculator({ onInquiry }: { onInquiry: (msg: stri
                   </div>
                 </div>
                 
-                <h3 className={`font-serif text-[22px] transition-colors ${isSelected ? "text-white" : "text-[#111111]"}`}>
+                <h3 className={`font-serif text-lg md:text-[22px] transition-colors ${isSelected ? "text-white" : "text-[#111111]"}`}>
                   {service.name}
                 </h3>
-                <p className={`font-sans text-[15px] mt-1 transition-colors ${isSelected ? "text-white/70" : "text-[#6B7280]"}`}>
+                <p className={`font-sans text-sm md:text-[15px] mt-1 transition-colors ${isSelected ? "text-white/70" : "text-[#6B7280]"}`}>
                   {service.description}
                 </p>
               </motion.div>
@@ -231,18 +231,18 @@ export default function PricingCalculator({ onInquiry }: { onInquiry: (msg: stri
         >
           <div className="flex flex-col items-center md:items-start min-h-[100px] justify-center">
             {selectedIds.length === 0 ? (
-              <span className="font-serif text-[28px] md:text-[28px] text-white/40 leading-none">Wybierz usługi powyżej ↑</span>
+              <span className="font-serif text-sm md:text-[28px] text-white/40 leading-none">Wybierz usługi powyżej ↑</span>
             ) : (
               <>
-                <span className="font-sans text-[12px] text-white/50 uppercase tracking-widest mb-1 leading-none">
+                <span className="font-sans text-sm md:text-[12px] text-white/50 uppercase tracking-widest mb-1 leading-none">
                   MIESIĘCZNY KOSZT:
                 </span>
                 <div className="flex items-baseline gap-2 justify-center md:justify-start">
-                  <span className="font-sans text-[18px] text-white/70 mt-1 leading-none">od</span>
-                  <motion.span className="font-serif text-[48px] md:text-[64px] font-bold text-white leading-none">
+                  <span className="font-sans text-sm md:text-[18px] text-white/70 mt-1 leading-none">od</span>
+                  <motion.span className="font-serif text-2xl md:text-[64px] font-bold text-white leading-none">
                     {displayTotal}
                   </motion.span>
-                  <span className="font-sans text-[20px] text-white/70 mt-1 leading-none">zł / mies.</span>
+                  <span className="font-sans text-sm md:text-[20px] text-white/70 mt-1 leading-none">zł / mies.</span>
                 </div>
                 <div className="flex flex-col items-center md:items-start mt-2">
                   <AnimatePresence mode="wait">
@@ -252,12 +252,12 @@ export default function PricingCalculator({ onInquiry }: { onInquiry: (msg: stri
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: -8, scale: 0.95 }}
                       transition={{ duration: 0.25 }}
-                      className="inline-flex bg-white/10 text-white rounded-full px-4 py-1 font-sans text-[14px] font-medium mb-1"
+                      className="inline-flex bg-white/10 text-white rounded-full px-4 py-1 font-sans text-sm md:text-[14px] font-medium mb-1"
                     >
                       ✦ {packageInfo.name}
                     </motion.div>
                   </AnimatePresence>
-                  <span className="font-sans text-[13px] text-white/40 mt-1">
+                  <span className="font-sans text-sm md:text-[13px] text-white/40 mt-1">
                     Cena orientacyjna · ustalana indywidualnie
                   </span>
                 </div>
@@ -269,7 +269,7 @@ export default function PricingCalculator({ onInquiry }: { onInquiry: (msg: stri
             onClick={handleInquiryClick}
             disabled={selectedIds.length === 0}
             whileHover={selectedIds.length > 0 ? { scale: 1.02 } : {}}
-            className={`font-sans text-[16px] font-semibold rounded-full px-8 py-4 transition-all duration-300 w-full md:w-auto flex-shrink-0 ${
+            className={`font-sans text-sm px-4 py-2 md:text-[16px] md:px-8 md:py-4 font-semibold rounded-full transition-all duration-300 w-full md:w-auto flex-shrink-0 ${
               selectedIds.length > 0 
                 ? "bg-white text-[#1A2744] hover:bg-[#FAF9F6] shadow-lg" 
                 : "bg-neutral-500 text-neutral-300 cursor-not-allowed"

@@ -11,18 +11,18 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="md:col-span-1 border-b border-white/10 md:border-b-0 pb-8 md:pb-0">
-            <Link href="/" className="font-serif text-[28px] tracking-tight block mb-4">
+            <Link href="/" className="font-serif text-xl md:text-[28px] tracking-tight block mb-4">
               [NAZWA AGENCJI]
             </Link>
-            <p className="font-sans text-white/60 font-light text-[15px] leading-relaxed">
+            <p className="font-sans text-white/60 font-light text-sm md:text-[15px] leading-relaxed">
               Tworzymy strony internetowe, prowadzimy social media i dbamy o Twój wizerunek z myślą o realnych zyskach.
             </p>
           </div>
 
           {/* Links */}
           <div className="md:col-span-1 md:justify-self-center">
-            <h4 className="font-serif text-[20px] mb-6">Nawigacja</h4>
-            <ul className="space-y-4 font-sans text-white/60 font-light text-[15px]">
+            <h4 className="font-serif text-lg md:text-[20px] mb-6">Nawigacja</h4>
+            <ul className="space-y-4 font-sans text-white/60 font-light text-sm md:text-[15px]">
               <li><Link href="#o-nas" className="hover:text-white transition-colors">O nas</Link></li>
               <li><Link href="#uslugi" className="hover:text-white transition-colors">Usługi</Link></li>
               <li><Link href="#portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
@@ -32,8 +32,8 @@ export default function Footer() {
 
           {/* Contact Details */}
           <div className="md:col-span-1 md:justify-self-center">
-            <h4 className="font-serif text-[20px] mb-6">Skontaktuj się</h4>
-            <ul className="space-y-4 font-sans text-white/60 font-light text-[15px]">
+            <h4 className="font-serif text-lg md:text-[20px] mb-6">Skontaktuj się</h4>
+            <ul className="space-y-4 font-sans text-white/60 font-light text-sm md:text-[15px]">
               <li>
                 <a href="tel:123456789" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Phone className="w-4 h-4" /> 123 456 789
@@ -49,7 +49,7 @@ export default function Footer() {
 
           {/* Social Media */}
           <div className="md:col-span-1 md:justify-self-end">
-             <h4 className="font-serif text-[20px] mb-6">Obserwuj nas</h4>
+             <h4 className="font-serif text-lg md:text-[20px] mb-6">Obserwuj nas</h4>
              <div className="flex gap-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[var(--color-navy)] hover:text-white transition-colors text-white/80">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">

@@ -29,10 +29,10 @@ export default function Portfolio() {
           variants={itemVariants}
           className="max-w-xl mb-16"
         >
-          <h2 className="font-serif text-[32px] md:text-[48px] text-[var(--color-navy)] mb-4">
+          <h2 className="font-serif text-xl md:text-[48px] text-[var(--color-navy)] mb-4">
             Nasze realizacje
           </h2>
-          <p className="font-sans text-lg text-[var(--color-text-muted)]">
+          <p className="font-sans text-sm md:text-lg text-[var(--color-text-muted)]">
             Zobacz, jak pomogliśmy innym firmom osiągnąć ich cele i zbudować silną pozycję na rynku.
           </p>
         </motion.div>
@@ -70,7 +70,7 @@ export default function Portfolio() {
                 <p className="font-sans text-white/80 text-sm tracking-widest uppercase mb-2">
                   {project.category}
                 </p>
-                <h3 className="font-serif text-white text-[28px] leading-tight">
+                <h3 className="font-serif text-white text-lg md:text-[28px] leading-tight">
                   {project.title}
                 </h3>
               </motion.div>
@@ -89,7 +89,7 @@ export default function Portfolio() {
             href="#kontakt"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="border-2 border-[var(--color-navy)] text-[var(--color-navy)] font-sans font-medium text-[15px] tracking-[0.02em] rounded-full px-8 py-3.5 transition-all duration-300 hover:bg-[var(--color-navy)] hover:text-white"
+            className="border-2 border-[var(--color-navy)] text-[var(--color-navy)] font-sans font-medium text-sm px-4 py-2 md:text-[15px] md:px-8 md:py-3.5 tracking-[0.02em] rounded-full transition-all duration-300 hover:bg-[var(--color-navy)] hover:text-white"
           >
             Porozmawiajmy o Twoim projekcie
           </motion.a>
