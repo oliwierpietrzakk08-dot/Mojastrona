@@ -12,7 +12,6 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 flex flex-col items-center text-center mt-16">
-        <div className="bg-[#1A2744]/80 backdrop-blur-sm rounded-3xl px-6 md:px-12 py-10 flex flex-col items-center max-w-4xl shadow-2xl">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,7 +55,6 @@ export default function Hero() {
             Zobacz nasze usługi
           </motion.a>
         </motion.div>
-        </div>
       </div>
     </section>
   );
