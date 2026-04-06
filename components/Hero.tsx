@@ -16,7 +16,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-[40px] md:text-[72px] leading-[1.1] text-white mb-6 max-w-4xl tracking-tight"
+          className="font-serif text-3xl md:text-[72px] leading-[1.1] text-white mb-6 max-w-4xl tracking-tight"
         >
           Twój marketing, który<br />
           <span className="relative inline-block mt-2 md:mt-0 text-[var(--color-bg-alt)] border-b-2 border-white/40 pb-1">naprawdę działa</span>
@@ -26,7 +26,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="font-sans text-lg md:text-xl text-white/90 font-light max-w-2xl mb-10 leading-relaxed"
+          className="font-sans text-sm md:text-xl text-white/90 font-light max-w-2xl mb-10 leading-relaxed"
         >
           Prowadzimy social media, Google Business Profile i tworzymy strony internetowe, które przyciągają klientów — nie tylko odwiedzających.
         </motion.p>
@@ -41,7 +41,7 @@ export default function Hero() {
             href="#kontakt"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="flex items-center justify-center w-full sm:w-auto bg-[var(--color-navy)] text-white font-sans font-medium text-[15px] tracking-[0.02em] rounded-full px-8 py-3.5 transition-all duration-300 hover:bg-[var(--color-navy-light)] shadow-lg"
+            className="flex items-center justify-center w-full sm:w-auto bg-[var(--color-navy)] text-white font-sans font-medium text-sm md:text-[15px] tracking-[0.02em] rounded-full px-5 py-2 md:px-8 md:py-3.5 transition-all duration-300 hover:bg-[var(--color-navy-light)] shadow-lg"
           >
             Napisz do nas
           </motion.a>
@@ -50,7 +50,7 @@ export default function Hero() {
             href="#uslugi"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="flex items-center justify-center w-full sm:w-auto border-2 border-white/80 text-white font-sans font-medium text-[15px] tracking-[0.02em] rounded-full px-8 py-3.5 transition-all duration-300 hover:bg-white hover:text-[var(--color-navy)]"
+            className="flex items-center justify-center w-full sm:w-auto border-2 border-white/80 text-white font-sans font-medium text-sm md:text-[15px] tracking-[0.02em] rounded-full px-5 py-2 md:px-8 md:py-3.5 transition-all duration-300 hover:bg-white hover:text-[var(--color-navy)]"
           >
             Zobacz nasze usługi
           </motion.a>
