@@ -1,12 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Mail, Loader2, CheckCircle } from "lucide-react";
 
-export default function Contact() {
+export default function Contact({ prefillMessage }: { prefillMessage?: string }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [messageText, setMessageText] = useState("");
+
+  useEffect(() => {
+    if (prefillMessage) {
+      setMessageText(prefillMessage);
+    }
+  }, [prefillMessage]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -172,6 +179,8 @@ export default function Contact() {
                     name="message" 
                     required 
                     disabled={isSubmitting}
+                    value={messageText}
+                    onChange={(e) => setMessageText(e.target.value)}
                     rows={4}
                     className="w-full bg-neutral-50 border border-neutral-200 rounded-xl px-4 py-3 outline-none focus:border-[var(--color-navy)] focus:ring-1 focus:ring-[var(--color-navy)] transition-all resize-none font-sans"
                     placeholder="Opisz krótko swój projekt lub to, w czym możemy Ci pomóc..."
