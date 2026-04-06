@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { Plus_Jakarta_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500"],
-  variable: "--font-dm-sans",
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-plus-jakarta",
 });
 
 const dmSerif = DM_Serif_Display({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl" className="scroll-smooth">
-      <body className={`${dmSans.variable} ${dmSerif.variable} font-sans bg-[var(--color-bg)] text-[var(--color-text)] antialiased`}>
+      <body className={`${plusJakartaSans.variable} ${dmSerif.variable} font-sans bg-[var(--color-bg)] text-[var(--color-text)] antialiased`}>
         {children}
       </body>
     </html>
